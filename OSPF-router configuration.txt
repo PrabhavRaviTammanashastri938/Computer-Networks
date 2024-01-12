@@ -1,0 +1,19 @@
+OSPF-router configuration
+
+
+assign ip address, default gateway etc. 
+
+go to router 1:
+router config#router ospf 1
+router config-router# network 192.168.10.0 0.0.0.255 area 0
+router config-router# network 11.10.0.0  255.255.255.0 area 0
+
+router config-router# network 10.0.0.0  255.255.255.0 area 0
+router config-router#exit
+
+
+here assign network ip address and then wildcard address
+ 
+
+repeat for all routers
+ 
